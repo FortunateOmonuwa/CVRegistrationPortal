@@ -1,0 +1,6 @@
+@CVRegistrationPortal_HostAddress = http://localhost:5081
+
+GET {{CVRegistrationPortal_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
