@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CVRegistrationPortal", "CVR
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StorageBucket", "StorageBucket\StorageBucket.csproj", "{BA868ACF-13C4-403B-B72A-3CECACA1F553}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities", "Utilities\Utilities.csproj", "{A730B6E1-9B17-4A42-AA44-2FF1850FFAB6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{BA868ACF-13C4-403B-B72A-3CECACA1F553}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA868ACF-13C4-403B-B72A-3CECACA1F553}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA868ACF-13C4-403B-B72A-3CECACA1F553}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A730B6E1-9B17-4A42-AA44-2FF1850FFAB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A730B6E1-9B17-4A42-AA44-2FF1850FFAB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A730B6E1-9B17-4A42-AA44-2FF1850FFAB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A730B6E1-9B17-4A42-AA44-2FF1850FFAB6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
