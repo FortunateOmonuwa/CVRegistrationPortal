@@ -1,9 +1,6 @@
 global using CVRegistrationPortal.DataContext;
-global using CVRegistrationPortal;
 global using CVRegistrationPortal.Interfaces;
 global using CVRegistrationPortal.Repositories;
-using Utilities.Configs;
-using UserManagement.API.Service;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);

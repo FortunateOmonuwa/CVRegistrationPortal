@@ -4,30 +4,28 @@ using Microsoft.Extensions.Options;
 using MimeKit;
 using MimeKit.Text;
 using Utilities.Configs;
-using Utilities.Services.MailService;
-using Utilities.Services.MailService.DTO;
 
-namespace UserManagement.API.Service
+namespace Utilities.Services.MailService
 {
     public class MailService : IMailService
     {
-      
-       private readonly AppSettings _settings;
-        public MailService (IOptions<AppSettings> settings)
+
+        private readonly AppSettings _settings;
+        public MailService(IOptions<AppSettings> settings)
         {
             _settings = settings.Value;
 
-           
+
 
         }
         public async Task<ResponseDetail<string>> SendMail(MailRequest mail)
         {
             try
             {
-                var newBody = $"<h1>{mail.Body}</h1>";
+                var mailBody = mail.Body;
                 var response = new ResponseDetail<string>();
 
-               
+
 
                 var message = new MimeMessage
                 {
@@ -36,7 +34,7 @@ namespace UserManagement.API.Service
                     Subject = mail.Subject,
                     Body = new TextPart(TextFormat.Html)
                     {
-                        Text = newBody
+                        Text = mailBody
                     },
                 };
 

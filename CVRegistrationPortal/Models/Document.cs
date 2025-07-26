@@ -1,4 +1,6 @@
-﻿namespace CVRegistrationPortal.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace CVRegistrationPortal.Models
 {
     public class Document
     {
@@ -7,8 +9,9 @@
         public required string Name { get; set; }
         public required string Path { get; set; }
         public string FileExtension { get; set; }
+        [ForeignKey("User")]
         public int UserID { get; set; }
         public DateTime UploadedOn { get; set; } = DateTime.Now.Date;
-        
+
     }
 }
